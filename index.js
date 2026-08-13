@@ -14,8 +14,8 @@ const homeHTML = `
               <span id="word3">Engineer</span>
               <span id="word4">Developer</span>
           </span>
-          with 2 years of experience in Java Backend
-          Development using Spring Boot. Passionate about building scalable
+          ith 2+ years of experience in Java Enterprise application
+          using Spring Boot in service industry. Passionate about building scalable
           applications, solving Data Structures & Algorithms, and continuously
           improving my Full Stack Development and Machine Learning skills.
         </p>
