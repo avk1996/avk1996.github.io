@@ -75,9 +75,9 @@ const projectsHTML = `
 const contactsHTML = `
  <h1>Contact</h1>
   <div id="linkList">
-      <div id="gmail">
-        <a href="kumbhara976@gmail.com">📧 Email </a>
-      </div>
+    <a id="gmail" href="mailto:kumbhara976@gmail.com?subject=Job Opportunity&body=Hi Abhishek,%0A%0AI came across your portfolio...">
+    📧 Email
+      </a>
       <div id="linkedin">
         <a
           href="https://linkedin.com/in/abhishek-kumbhar-323129214"
@@ -93,40 +93,54 @@ const contactsHTML = `
       </div>
   </div>`;
 
-const home = document.getElementById("homeLink");
-const skill = document.getElementById("skillsLink");
-const coding = document.getElementById("codingLink");
-const project = document.getElementById("projectsLink");
-const contact = document.getElementById("contactLink");
+const home = document.querySelectorAll(".homeLink");
+const skill = document.querySelectorAll(".skillsLink");
+const coding = document.querySelectorAll(".codingLink");
+const project = document.querySelectorAll(".projectsLink");
+const contact = document.querySelectorAll(".contactLink");
 
 const content = document.getElementById("content");
 
 changeContent(homeHTML);
 
-home.addEventListener("click", (event) => {
-  event.preventDefault();
-  changeContent(homeHTML);
+home.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    changeContent(homeHTML);
+    closeSideBar(); // Optional: closes sidebar on mobile
+  });
 });
 
-skill.addEventListener("click", (event) => {
-  event.preventDefault();
-  changeContent(skillsHTML);
+skill.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    changeContent(skillsHTML);
+    closeSideBar(); // Optional: closes sidebar on mobile
+  });
 });
 
-coding.addEventListener("click", (event) => {
-  event.preventDefault();
-  changeContent(codingHTML);
+coding.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    changeContent(codingHTML);
+    closeSideBar(); // Optional: closes sidebar on mobile
+  });
 });
 
-project.addEventListener("click", (event) => {
-  event.preventDefault();
-  // content.innerHTML = projectsHTML;
-  changeContent(homeHTML);
+project.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    changeContent(homeHTML);
+    closeSideBar(); // Optional: closes sidebar on mobile
+  });
 });
 
-contact.addEventListener("click", (event) => {
-  event.preventDefault();
-  changeContent(contactsHTML);
+contact.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    changeContent(contactsHTML);
+    closeSideBar(); // Optional: closes sidebar on mobile
+  });
 });
 
 function changeContent(html) {
@@ -138,3 +152,14 @@ function changeContent(html) {
     content.classList.remove("fade");
   }, 300);
 }
+
+// responsive js
+showSideBar = () => {
+  const sideBar = document.querySelector(".sideBar");
+  sideBar.style.display = "flex";
+};
+
+closeSideBar = () => {
+  const sideBar = document.querySelector(".sideBar");
+  sideBar.style.display = "none";
+};
