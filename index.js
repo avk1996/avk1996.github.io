@@ -14,7 +14,7 @@ const homeHTML = `
               <span id="word3">Engineer</span>
               <span id="word4">Developer</span>
           </span>
-          ith 2+ years of experience in Java Enterprise application
+          with 2+ years of experience in Java Enterprise application
           using Spring Boot in service industry. Passionate about building scalable
           applications, solving Data Structures & Algorithms, and continuously
           improving my Full Stack Development and Machine Learning skills.
