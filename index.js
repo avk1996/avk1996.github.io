@@ -51,25 +51,27 @@ const codingHTML = `
 `;
 
 const projectsHTML = `
-  <h1>Projects</h1>
+ <section class="projects">
+    <h2>My Projects</h2>
 
-  <article>
-        <h3>Quiz Management System</h3>
+    <div class="projects-container">
 
-        <p>Description of your project.</p>
+        <div class="project-card">
+          <a href="https://avk1996.github.io/JavaScript-Projects/">
+            <img src="./projects/tick_tack_toe.png" alt="Expense Tracker">
+          </a>
+          <p>HTML · CSS · JavaScript</p>
+        </div>
 
-        <a href="#">GitHub</a>
+        <div class="project-card">
+          <a href="https://sksolutions247.github.io/">
+            <img src="./projects/adv.png" alt="Expense Tracker">
+          </a>
+            <p>HTML · CSS · JavaScript</p>
+        </div>
 
-        <a href="#">Live Demo</a>
-      </article>
-
-      <article>
-        <h3>Train Reservation System</h3>
-
-        <p>Description of your project.</p>
-
-        <a href="#">GitHub</a>
-      </article>
+    </div>
+</section>
 `;
 
 const contactsHTML = `
@@ -130,7 +132,7 @@ coding.forEach((link) => {
 project.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
-    changeContent(homeHTML);
+    changeContent(projectsHTML);
     closeSideBar(); // Optional: closes sidebar on mobile
   });
 });

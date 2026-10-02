@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   background: linear-gradient(90deg, #0b0f19 0%, #111827 40%, #0d1117 100%);
   color: white;
@@ -52,6 +53,7 @@ main {
   padding: 40px;
   grid-template-columns: 60% 40%;
 }
+
 #content p {
   text-align: justify;
   line-height: 1.5;
@@ -61,7 +63,8 @@ main {
 #headshot {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertical center */
+  justify-content: center;
+  /* Vertical center */
   align-items: center;
 }
 
@@ -152,6 +155,7 @@ h1 {
 #wordContainer1:hover #word4 {
   display: inline-block;
 }
+
 /* About me */
 #aboutMe,
 #skillList,
@@ -263,6 +267,7 @@ h1 {
   border-radius: 10px;
   transition: box-shadow 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 #frameName:hover {
   cursor: grab;
   box-shadow: 0px 2px 2px white;
@@ -307,11 +312,14 @@ h1 {
   .hideOnMobile {
     display: none;
   }
+
   .menuButton {
     display: block;
   }
+
   main {
-    grid-template-columns: 1fr; /* One column */
+    grid-template-columns: 1fr;
+    /* One column */
     grid-template-rows: auto auto;
     margin: 20px;
     padding: 20px;
@@ -329,7 +337,8 @@ h1 {
   }
 
   #profileImage {
-    width: 220px; /* Adjust to your liking */
+    width: 220px;
+    /* Adjust to your liking */
     height: auto;
   }
 
@@ -344,6 +353,63 @@ h1 {
     font-size: small;
   }
 }
+
+/* project showcase grid */
+
+.projects {
+  padding: 20px;
+}
+
+.projects h2 {
+  color: white;
+  margin-bottom: 25px;
+}
+
+/* FLEX CONTAINER */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* PROJECT CARD */
+.project-card {
+  width: 280px;
+  border: 2px solid #2563eb;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #111827;
+  cursor: pointer;
+
+  transition: transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* IMAGE */
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* TEXT */
+.project-card h3 {
+  color: white;
+  margin: 15px 15px 5px;
+}
+
+.project-card p {
+  color: #9ca3af;
+  margin: 0 15px 15px;
+}
+
+/* HOVER */
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.35);
+}
+
 
 @media (max-width: 400px) {
   .sideBar {
