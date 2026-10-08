@@ -58,16 +58,23 @@ const projectsHTML = `
 
         <div class="project-card">
           <a href="https://avk1996.github.io/JavaScript-Projects/">
-            <img src="./projects/tick_tack_toe.png" alt="Expense Tracker">
+            <img src="./projects/tick_tack_toe.png" alt="tick tack toe">
           </a>
           <p>HTML · CSS · JavaScript</p>
         </div>
 
         <div class="project-card">
           <a href="https://sksolutions247.github.io/">
-            <img src="./projects/adv.png" alt="Expense Tracker">
+            <img src="./projects/adv.png" alt="Advacate business page">
           </a>
             <p>HTML · CSS · JavaScript</p>
+        </div>
+
+        <div class="project-card">
+          <a href="https://frontendexpensetracker-src.vercel.app/">
+            <img src="./projects/expense_tracker.png" alt="Expense Tracker">
+          </a>
+            <p>Java · MySQL · React</p>
         </div>
 
     </div>
