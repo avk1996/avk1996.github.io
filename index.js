@@ -57,6 +57,13 @@ const projectsHTML = `
     <div class="projects-container">
 
         <div class="project-card">
+          <a href="https://frontendexpensetracker-src.vercel.app/">
+            <img src="./projects/expense_tracker.png" alt="Expense Tracker">
+          </a>
+            <p>Java · MySQL · React</p>
+        </div>
+
+        <div class="project-card">
           <a href="https://avk1996.github.io/JavaScript-Projects/">
             <img src="./projects/tick_tack_toe.png" alt="tick tack toe">
           </a>
@@ -68,13 +75,6 @@ const projectsHTML = `
             <img src="./projects/adv.png" alt="Advacate business page">
           </a>
             <p>HTML · CSS · JavaScript</p>
-        </div>
-
-        <div class="project-card">
-          <a href="https://frontendexpensetracker-src.vercel.app/">
-            <img src="./projects/expense_tracker.png" alt="Expense Tracker">
-          </a>
-            <p>Java · MySQL · React</p>
         </div>
 
     </div>
