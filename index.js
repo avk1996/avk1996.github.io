@@ -29,10 +29,13 @@ const skillsHTML = `
   <h1>Skills</h1>
 
       <div id="skillList">
-      Languages: Java, JavaScript, C++, SQL<br/>
-      Frameworks: Spring Boot, React, Node.JS<br/>
-      Databases: MySQL, MongoDB<br/>
-      Tools: Intellij, Eclips, Spring suite, Git, Docker, Postman, VS Code<br/>
+        • Core & Backend Technologies: Java, Spring Boot, Hibernate, Microservices, Drools Rule Engine</br>
+        • Web & UI Frameworks: Angular 6+, React.js, HTML5, CSS3, Tailwind CSS</br>
+        • Databases & Storage: PostgreSQL, MySQL, MongoDB</br>
+        • AI & Advanced Tech: Python, Retrieval-Augmented Generation (RAG)</br>
+        • DevOps & Cloud Integration: AWS (Amazon Web Services), Jenkins, Spinnaker, Git, GitHub</br>
+        • Monitoring & Quality Tools: Kibana (ELK Stack), SonarQube, Postman</br>
+        • IDEs & Productivity: IntelliJ IDEA, Eclipse, Spring Tool Suite (STS), VS Code, Tabnine (AI Assistant)</br>
       </div>`;
 
 const codingHTML = `
