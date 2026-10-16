@@ -14,10 +14,9 @@ const homeHTML = `
               <span id="word3">Engineer</span>
               <span id="word4">Developer</span>
           </span>
-          with 2+ years of experience in Java Enterprise application
-          using Spring Boot in service industry. Passionate about building scalable
-          applications, solving Data Structures & Algorithms, and continuously
-          improving my Full Stack Development and Machine Learning skills.
+            for 2.5 years of experience in Java Enterprise applications in the service industry, including key deployments for client Entertainment Partners. Proven expertise in building scalable Microservices using Spring Boot, Hibernate,
+            and Drools Rule Engine to drive business logic automation. Proficient in optimizing data access layers and solving challenges. Leveraging modern workflows via IntelliJ IDEA and Tabnine AI to deliver clean, accelerated code while continuously
+            expanding capabilities in Full-Stack frameworks and Machine Learning systems.
         </p>
 
         <a href="resume/abhishek_kumbhar.pdf" target="_blank" id="resumeButton">
